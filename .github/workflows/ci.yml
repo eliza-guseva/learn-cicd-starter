@@ -19,4 +19,4 @@ jobs:
           go-version: "1.23.0"
 
       - name: Force Failure
-        run: (echo "1.23.0" && exit o)
+        run: (echo "1.23.0" && exit 0)
