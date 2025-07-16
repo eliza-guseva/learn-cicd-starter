@@ -18,5 +18,8 @@ jobs:
         with:
           go-version: "1.23.0"
 
-      - name: Formatting
-        run: (test -z $(go fmt ./...))
+      - name: Test formatting
+        run: (test -z $(go fmt ./...))  
+
+      - name: Format code
+        run: (go fmt ./...)
