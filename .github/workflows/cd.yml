@@ -1,10 +1,8 @@
 name: cd
 
 on:
-  workflow_run:
-    workflows: ["ci"]  # This should match the "name" field in your ci.yml
-    types:
-      - completed
+  pull_request:
+    branches: [main]
 
 jobs:
   deploy:
